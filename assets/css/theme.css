@@ -11,7 +11,6 @@ h1, h2, h3, h4, h5, h6, h7, h8 {
     color: #B5E853; 
     line-height: 1.5;
     font-family: Monaco, "Bitstream Vera Sans Mono", "Lucida Console", Terminal, monospace;
-    text-align: left;
     margin: 0 0 20px;
     filter: blur(0.2px);
     -webkit-filter: blur(0.2px);

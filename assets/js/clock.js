@@ -1,14 +1,6 @@
 const startTime = new Date(Date.parse("04 Jun 2022 00:00:00 GMT+0800"));
 const endTime = new Date(Date.parse("06 Jun 2022 00:00:00 GMT+0800"))
 
-document.getElementById("ctf-start").textContent = startTime.toLocaleString(navigator.language, {
-  timeZone: Intl.DateTimeFormat().resolvedOptions().timeZone
-});
-
-document.getElementById("ctf-end").textContent = endTime.toLocaleString(navigator.language, {
-  timeZone: Intl.DateTimeFormat().resolvedOptions().timeZone
-});
-
 const getTimeRemaining = (endtime) => {
   let t = Date.parse(endtime) - Date.parse(new Date());
   let seconds = Math.floor((t / 1000) % 60);

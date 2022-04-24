@@ -15,7 +15,12 @@ const setTime = async () => {
     }).then(res => res.json()).then(res => {
         country = res.countrycode;
     });
-    languageString = `${navigator.language}-${country}`;
+
+    if (navigator.language.includes("-"))
+        languageString = navigator.language;
+    else
+        languageString = `${navigator.language}-${country}`;
+    
     ctfStart.textContent = startTime.toLocaleString(languageString, {
         timeZone: Intl.DateTimeFormat().resolvedOptions().timeZone
     });

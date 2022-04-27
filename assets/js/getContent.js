@@ -11,13 +11,22 @@ const addTwitterScript = () => {
     const script = document.createElement('script');
     script.src = 'https://platform.twitter.com/widgets.js';
     script.defer = true;
+    script.id = 'twitter-wjs';
     document.body.appendChild(script);
+}
+
+const removeTwitterScript = () => {
+    const script = document.getElementById('twitter-wjs');
+    if (script)
+        script.remove();
 }
 
 for (let i = 0; i < navbar.children.length; i++) {
     navLink = navbar.children[i].children[0];
     navLink.addEventListener('click', (e) => {
         
+        removeTwitterScript();
+
         let toFetch;
 
         switch (e.target.textContent.trim()) {

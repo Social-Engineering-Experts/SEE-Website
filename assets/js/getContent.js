@@ -7,6 +7,13 @@ const loadContent = (toFetch) => {
     });
 }
 
+const addTwitterScript = () => {
+    const script = document.createElement('script');
+    script.src = 'https://platform.twitter.com/widgets.js';
+    script.defer = true;
+    document.body.appendChild(script);
+}
+
 for (let i = 0; i < navbar.children.length; i++) {
     navLink = navbar.children[i].children[0];
     navLink.addEventListener('click', (e) => {
@@ -18,6 +25,7 @@ for (let i = 0; i < navbar.children.length; i++) {
                 return;
             case 'About':
                 toFetch = 'about.inc.html';
+                addTwitterScript();
                 break;
             case 'Rules':
                 toFetch = 'rules.inc.html';
@@ -45,3 +53,4 @@ for (let i = 0; i < navbar.children.length; i++) {
 }
 
 loadContent('about.inc.html');
+addTwitterScript();

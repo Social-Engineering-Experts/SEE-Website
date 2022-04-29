@@ -1,9 +1,13 @@
 const navbar = document.querySelector('#navbar');
 
 const loadContent = (toFetch) => {
+    
+    removeTwitterScript();
+
     fetch(toFetch).then(res => res.text()).then(res => {
         document.getElementById('SEETF').innerHTML = res;
         setTime();
+        addTwitterScript();
     });
 }
 
@@ -24,8 +28,6 @@ const removeTwitterScript = () => {
 for (let i = 0; i < navbar.children.length; i++) {
     navLink = navbar.children[i].children[0];
     navLink.addEventListener('click', (e) => {
-        
-        removeTwitterScript();
 
         let toFetch;
 
@@ -34,7 +36,6 @@ for (let i = 0; i < navbar.children.length; i++) {
                 return;
             case 'About':
                 toFetch = 'about.inc.html';
-                addTwitterScript();
                 break;
             case 'Rules':
                 toFetch = 'rules.inc.html';
@@ -62,4 +63,3 @@ for (let i = 0; i < navbar.children.length; i++) {
 }
 
 loadContent('about.inc.html');
-addTwitterScript();

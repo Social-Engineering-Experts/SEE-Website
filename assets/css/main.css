@@ -22,3 +22,8 @@
 .btn-success {
     color: white !important;
 }
+
+* {
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+}

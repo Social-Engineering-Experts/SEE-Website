@@ -123,7 +123,7 @@ dt {
 ul {list-style: none;}
 ul li:not(.nav-item)::before {content: ">>  "; color: #B5E853;}
 ol {display: table; margin-left: 0; margin-right: auto; list-style-position: inside;}
-a:hover, a:visited, a:link, a:active {color: #6CBDEC; text-decoration: none; filter: blur(0.2px); -webkit-filter: blur(0.2px);}
+a:hover, a:visited, a:link, a:active {color: #6CBDEC; text-decoration: none;}
 
 
 /*  font style  */

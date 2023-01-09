@@ -38,5 +38,4 @@ jobs:
       - name: Run deploy
         uses: JamesIves/github-pages-deploy-action@4.4.0 
         with:
-          branch: gh-pages
           folder: out

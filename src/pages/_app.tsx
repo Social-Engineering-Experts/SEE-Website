@@ -31,7 +31,11 @@ const montserrat = Montserrat({
   subsets: ['latin'],
 });
 
-const fira_code = Fira_Code();
+const fira_code = Fira_Code({
+  weight: ['400', '700'],
+  style: ['normal'],
+  subsets: ['latin'],
+});
 
 const App = ({ Component, pageProps }: AppPropsWithLayout) => {
   const getLayout = Component.getLayout ?? ((page) => page);

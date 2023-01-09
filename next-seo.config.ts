@@ -21,10 +21,6 @@ const config: DefaultSeoProps = {
     {
       rel: "apple-touch-icon",
       href: "/apple-touch-icon.png",
-    },
-    {
-      rel: "manifest",
-      href: "/site.webmanifest",
     }
   ]
 };

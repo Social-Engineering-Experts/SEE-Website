@@ -11,11 +11,27 @@ const useStyles = createStyles((theme) => ({
     justifyContent: "center",
     alignItems: "center",
     height: "100%",
+
+    [theme.fn.smallerThan("sm")]: {
+      justifyContent: "end",
+    }
   },
 
   links: {
+    display: "flex",
+    flexDirection: "row",
+
     [theme.fn.smallerThan("sm")]: {
-      display: "none",
+      display: "none"
+    },
+  },
+
+  mobileLinks: {
+    display: "flex",
+    flexDirection: "row",
+
+    [theme.fn.smallerThan("sm")]: {
+      flexDirection: "column",
     },
   },
 
@@ -56,6 +72,13 @@ const useStyles = createStyles((theme) => ({
       theme.colorScheme === "dark"
         ? theme.colors.dark[6]
         : theme.colors.gray[0],
+  },
+
+  contentMobile: {
+    display: "none",
+    [theme.fn.smallerThan("sm")]: {
+      display: "block",
+    },
   },
 }));
 

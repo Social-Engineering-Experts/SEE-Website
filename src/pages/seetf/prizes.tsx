@@ -68,7 +68,6 @@ const useStyles = createStyles((theme) => ({
 
   mainTitle: {
     fontSize: "clamp(2rem, 1.6rem + 2vw, 4rem)",
-    fontFamily: "Fira Code",
     color: theme.colorScheme === "dark" ? "#B5E853" : theme.colors.gray[9],
   },
 

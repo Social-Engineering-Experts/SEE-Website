@@ -37,6 +37,7 @@ const TopHeader = () => {
       })}
       onClick={(event) => {
         setActive(link.link);
+        setOpened(false);
       }}
     >
       {link.label}

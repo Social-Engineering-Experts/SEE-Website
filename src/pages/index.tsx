@@ -18,12 +18,12 @@ const useStyles = createStyles((theme) => ({
   title: {
     fontSize: "clamp(2rem, 1.6rem + 2vw, 4rem)",
     color: theme.colorScheme === "dark" ? "#B5E853" : theme.black,
-    fontFamily: "Fira Code",
+    // fontFamily: "Fira Code",
     textAlign: "center",
   },
 
   secondaryTitle: {
-    fontFamily: "Fira Code",
+    // fontFamily: "Fira Code",
     textAlign: "center",
   },
 
@@ -40,7 +40,8 @@ const useStyles = createStyles((theme) => ({
 
   links: {
     fontWeight: 500,
-    fontFamily: "Fira Code",
+    // fontFamily: "Fira Code",
+    fontFamily: `${theme.fontFamilyMonospace}`,
     fontSize: "clamp(1rem, 0.95rem + 0.25vw, 1.25rem)",
 
     // Middle align with icon

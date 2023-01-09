@@ -47,7 +47,7 @@ const useStyles = createStyles((theme) => ({
         : theme.colors.gray[7],
     fontSize: theme.fontSizes.md,
     fontWeight: 500,
-    fontFamily: "Fira Code",
+    fontFamily: `${theme.fontFamilyMonospace}, monospace`,
 
     "&:hover": {
       color: "#B5E853AA",

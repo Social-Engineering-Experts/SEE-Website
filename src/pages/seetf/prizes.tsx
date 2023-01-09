@@ -77,7 +77,6 @@ const useStyles = createStyles((theme) => ({
     marginTop: "2.5625rem",
     marginBottom: "0.8125rem",
     color: theme.colorScheme === "dark" ? "#B5E853" : theme.colors.gray[9],
-    fontFamily: "Fira Code",
   },
 
 

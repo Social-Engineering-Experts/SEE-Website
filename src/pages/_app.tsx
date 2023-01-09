@@ -32,7 +32,7 @@ const montserrat = Montserrat({
   display: "swap",
 });
 
-const fira_code = Fira_Code({
+export const fira_code = Fira_Code({
   weight: ["400", "700"],
   style: ["normal"],
   subsets: ["latin"],

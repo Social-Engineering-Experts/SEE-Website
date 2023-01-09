@@ -31,7 +31,6 @@ const useStyles = createStyles((theme) => ({
 
   mainTitle: {
     fontSize: "clamp(2rem, 1.6rem + 2vw, 4rem)",
-    fontFamily: "Fira Code",
     color: theme.colorScheme === "dark" ? "#B5E853" : theme.colors.gray[9],
   },
 
@@ -40,7 +39,6 @@ const useStyles = createStyles((theme) => ({
     marginTop: "2.5625rem",
     marginBottom: "0.8125rem",
     color: theme.colorScheme === "dark" ? "#B5E853" : theme.colors.gray[9],
-    fontFamily: "Fira Code",
   },
 
   paragraphText: {

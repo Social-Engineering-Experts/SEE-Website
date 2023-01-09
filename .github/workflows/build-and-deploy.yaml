@@ -36,6 +36,6 @@ jobs:
           touch out/.nojekyll
 
       - name: Run deploy
-        uses: JamesIves/github-pages-deploy-action@4.4.1
+        uses: JamesIves/github-pages-deploy-action@v4
         with:
           folder: out

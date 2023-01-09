@@ -1,14 +1,7 @@
 import {
-  Anchor,
-  Avatar,
   Burger,
-  Code,
   Drawer,
   Group,
-  Header,
-  Title,
-  UnstyledButton,
-  Text,
 } from "@mantine/core";
 import Link from "next/link";
 import { useEffect, useState } from "react";

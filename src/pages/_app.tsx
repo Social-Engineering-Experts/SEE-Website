@@ -10,31 +10,33 @@ import { Inter, Poppins, Fira_Code, Montserrat } from "@next/font/google";
 import SEO from "../../next-seo.config";
 import GlobalStyles from "src/styles/GlobalStyles";
 
-export type NextPageWithLayout<P ={}, IP=P> = NextPage<P, IP> & {
-    getLayout?: (page: ReactElement) => ReactNode;
-}
+export type NextPageWithLayout<P = {}, IP = P> = NextPage<P, IP> & {
+  getLayout?: (page: ReactElement) => ReactNode;
+};
 
 type AppPropsWithLayout = AppProps & {
-  Component : NextPageWithLayout;
-}
+  Component: NextPageWithLayout;
+};
 
-const inter = Inter({subsets: ["latin"]});
-const poppins = Poppins({
-  weight: ['400', '700'],
-  style: ['normal', 'italic'],
-  subsets: ['latin'],
-});
+// const inter = Inter({ subsets: ["latin"] });
+// const poppins = Poppins({
+//   weight: ["400", "700"],
+//   style: ["normal", "italic"],
+//   subsets: ["latin"],
+// });
 
 const montserrat = Montserrat({
-  weight: ['400', '700'],
-  style: ['normal', 'italic'],
-  subsets: ['latin'],
+  weight: ["400", "700"],
+  style: ["normal", "italic"],
+  subsets: ["latin"],
+  display: "swap",
 });
 
 const fira_code = Fira_Code({
-  weight: ['400', '700'],
-  style: ['normal'],
-  subsets: ['latin'],
+  weight: ["400", "700"],
+  style: ["normal"],
+  subsets: ["latin"],
+  display: "swap",
 });
 
 const App = ({ Component, pageProps }: AppPropsWithLayout) => {
@@ -42,7 +44,7 @@ const App = ({ Component, pageProps }: AppPropsWithLayout) => {
 
   return (
     <>
-    <DefaultSeo {...SEO} />
+      <DefaultSeo {...SEO} />
 
       <MantineProvider
         withGlobalStyles
@@ -52,11 +54,13 @@ const App = ({ Component, pageProps }: AppPropsWithLayout) => {
           colorScheme: "dark",
           fontFamily: `${montserrat.style.fontFamily}, sans-serif`,
           fontFamilyMonospace: `${fira_code.style.fontFamily}, monospace`,
+          headings: {
+            fontFamily: `${fira_code.style.fontFamily}, monospace`,
+          },
         }}
       >
         <GlobalStyles />
         {getLayout(<Component {...pageProps} />)}
-
       </MantineProvider>
     </>
   );

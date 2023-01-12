@@ -171,7 +171,7 @@ const About: NextPageWithLayout = () => {
         <Text className={classes.paragraphText}>
           They are actually drones used by the government to spy on you.
           The Super Evil Elite Intelligence Agency (SEE-IA) desperately wants to keep this a secret,
-          but hacker and whistleblower "rainbowpigeon" is determined to expose them.
+          but hacker and whistleblower &quot;rainbowpigeon&quot; is determined to expose them.
         </Text>
         <Text className={classes.paragraphText}>
           Will you help rainbowpigeon expose the truth? Or will you help SEE-IA cover up their crimes?

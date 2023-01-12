@@ -114,7 +114,7 @@ const Archive: NextPageWithLayout = () => {
         <Text className={classes.paragraphText}>
           After 48 hours of intense competition, <Anchor href="https://ctftime.org/team/58979/" target="_blank" underline={false}>
             no rev/pwn no life (r3kapig)
-          </Anchor>, N00b, and <Anchor href="https://ctftime.org/team/58980/" target="_blank" underline={false}>
+          </Anchor>, N00b, and <Anchor href="https://ctftime.org/team/122289/" target="_blank" underline={false}>
             NUSHmallows
           </Anchor> emerged victorious and took home the top three prizes.
         </Text>
@@ -140,7 +140,7 @@ const Archive: NextPageWithLayout = () => {
               [classes.paragraphWithArrows]: 1,
             })}
           >
-            willwam845 violated the official secrets act and took home the Mastery Award for Crypto.
+            willwam845 violated the Official Secrets Act and took home the Mastery Award for Crypto.
           </Text>
           <Divider
             variant="dashed"
@@ -153,7 +153,7 @@ const Archive: NextPageWithLayout = () => {
               [classes.paragraphWithArrows]: 1,
             })}
           >
-            thehackerscrew went shell collecting at east coast park and took home the Mastery Award for Pwn.
+            thehackerscrew went shell collecting at East Coast Park and took home the Mastery Award for Pwn.
           </Text>
           <Divider
             variant="dashed"

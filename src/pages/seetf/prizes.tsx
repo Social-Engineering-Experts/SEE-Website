@@ -105,75 +105,9 @@ const Prizes: NextPageWithLayout = () => {
           To Be Announced.
         </Title>
         <Text className={classes.paragraphText}>
-          Stay tuned for updates on our amazing prizes! We are currently
-          finalizing all the details and can&#39;t wait to share them with you.
-          Follow us on social media to stay in the loop and be the first to know when we announce the prizes.
+          Please check back later for more details.
+          In the meantime, follow us on social media and join our Discord server to stay in the loop!
         </Text>
-        <Group position="center" mt="xl">
-          <Button
-            component="a"
-            target="_blank"
-            rel="noopener noreferrer"
-            href="https://ctftime.org/team/151372"
-            styles={(theme) => ({
-              root: {
-                backgroundColor: "#D02C22",
-                border: 0,
-                // height: 42,
-                // paddingLeft: 20,
-                // paddingRight: 20,
-
-                "&:hover": {
-                  backgroundColor: theme.fn.darken("#D02C22", 0.1),
-                },
-              },
-
-              leftIcon: {
-                marginRight: 15,
-              },
-            })}
-          >
-            CTFTime
-          </Button>
-          <TwitterButton
-            target="_blank"
-            rel="noopener noreferrer"
-            href="https://twitter.com/seetf_sg">
-              Twitter
-          </TwitterButton>
-          <DiscordButton
-            target="_blank"
-            rel="noopener noreferrer"
-            href="https://twitter.com/seetf_sg">
-            Join our Discord
-          </DiscordButton>
-          <Button
-            component="a"
-            target="_blank"
-            rel="noopener noreferrer"
-            href="https://www.linkedin.com/company/social-engineering-experts/"
-            // leftIcon={<IconBrandTwitter size={16} />}
-            styles={(theme) => ({
-              root: {
-                backgroundColor: "#0072b1",
-                border: 0,
-                // height: 42,
-                // paddingLeft: 20,
-                // paddingRight: 20,
-
-                // "&:hover": {
-                //   backgroundColor: theme.fn.darken("#00acee", 0.05),
-                // },
-              },
-
-              leftIcon: {
-                marginRight: 15,
-              },
-            })}
-          >
-            LinkedIn
-          </Button>
-        </Group>
       </SectionContainer>
     </>
   );

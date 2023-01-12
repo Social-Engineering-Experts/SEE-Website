@@ -99,6 +99,71 @@ const About: NextPageWithLayout = () => {
           <Title order={1} className={classes.mainTitle}>
             SEETF 2023
           </Title>
+          <Group position="center" mt="xl">
+            <DiscordButton
+              target="_blank"
+              rel="noopener noreferrer"
+              href="https://discord.gg/6p54JPVkmj">
+              Join our Discord
+            </DiscordButton>
+            <Button
+              component="a"
+              target="_blank"
+              rel="noopener noreferrer"
+              href="https://ctftime.org/team/151372"
+              styles={(theme) => ({
+                root: {
+                  backgroundColor: "#D02C22",
+                  border: 0,
+                  // height: 42,
+                  // paddingLeft: 20,
+                  // paddingRight: 20,
+
+                  "&:hover": {
+                    backgroundColor: theme.fn.darken("#D02C22", 0.1),
+                  },
+                },
+
+                leftIcon: {
+                  marginRight: 15,
+                },
+              })}
+            >
+              CTFTime
+            </Button>
+            <TwitterButton
+              target="_blank"
+              rel="noopener noreferrer"
+              href="https://twitter.com/seetf_sg">
+              Twitter
+            </TwitterButton>
+            <Button
+              component="a"
+              target="_blank"
+              rel="noopener noreferrer"
+              href="https://www.linkedin.com/company/social-engineering-experts/"
+              // leftIcon={<IconBrandTwitter size={16} />}
+              styles={(theme) => ({
+                root: {
+                  backgroundColor: "#0072b1",
+                  border: 0,
+                  // height: 42,
+                  // paddingLeft: 20,
+                  // paddingRight: 20,
+
+                  // "&:hover": {
+                  //   backgroundColor: theme.fn.darken("#00acee", 0.05),
+                  // },
+                },
+
+                leftIcon: {
+                  marginRight: 15,
+                },
+              })}
+            >
+              LinkedIn
+            </Button>
+          </Group>
         </div>
         <Title order={2} className={classes.secondaryTitle}>
           Birds Aren&apos;t Real.
@@ -106,7 +171,7 @@ const About: NextPageWithLayout = () => {
         <Text className={classes.paragraphText}>
           They are actually drones used by the government to spy on you.
           The Super Evil Elite Intelligence Agency (SEE-IA) desperately wants to keep this a secret,
-          but hacker and whistleblower rainbowpigeon is determined to expose them.
+          but hacker and whistleblower "rainbowpigeon" is determined to expose them.
         </Text>
         <Text className={classes.paragraphText}>
           Will you help rainbowpigeon expose the truth? Or will you help SEE-IA cover up their crimes?
@@ -116,8 +181,12 @@ const About: NextPageWithLayout = () => {
           Details Coming Soon.
         </Title>
         <Text className={classes.paragraphText}>
-          The competition will run from Sat, 03 June 2023, 10:00 SGT — Sun, 04 June 2023, 18:00 SGT.
+          The competition will run from Sat, 03 June 2023, 10:00 SGT — Sun, 04 June 2023, 18:00 SGT
+          and will be open to all participants from around the world.
+        </Text>
+        <Text className={classes.paragraphText}>
           Please check back later for more details.
+          In the meantime, follow us on social media and join our Discord server to stay in the loop!
         </Text>
         <Title order={2} className={classes.secondaryTitle}>
           Sponsorship
@@ -125,71 +194,6 @@ const About: NextPageWithLayout = () => {
         <Text className={classes.paragraphText}>
           <Text fw={700}>If you or your company is interested in sponsoring us, please contact us at sponsor [AT] seetf.sg.</Text>
         </Text>
-        <Group position="center" mt="xl">
-          <Button
-            component="a"
-            target="_blank"
-            rel="noopener noreferrer"
-            href="https://ctftime.org/team/151372"
-            styles={(theme) => ({
-              root: {
-                backgroundColor: "#D02C22",
-                border: 0,
-                // height: 42,
-                // paddingLeft: 20,
-                // paddingRight: 20,
-
-                "&:hover": {
-                  backgroundColor: theme.fn.darken("#D02C22", 0.1),
-                },
-              },
-
-              leftIcon: {
-                marginRight: 15,
-              },
-            })}
-          >
-            CTFTime
-          </Button>
-          <TwitterButton
-            target="_blank"
-            rel="noopener noreferrer"
-            href="https://twitter.com/seetf_sg">
-            Twitter
-          </TwitterButton>
-          <DiscordButton
-            target="_blank"
-            rel="noopener noreferrer"
-            href="https://twitter.com/seetf_sg">
-            Join our Discord
-          </DiscordButton>
-          <Button
-            component="a"
-            target="_blank"
-            rel="noopener noreferrer"
-            href="https://www.linkedin.com/company/social-engineering-experts/"
-            // leftIcon={<IconBrandTwitter size={16} />}
-            styles={(theme) => ({
-              root: {
-                backgroundColor: "#0072b1",
-                border: 0,
-                // height: 42,
-                // paddingLeft: 20,
-                // paddingRight: 20,
-
-                // "&:hover": {
-                //   backgroundColor: theme.fn.darken("#00acee", 0.05),
-                // },
-              },
-
-              leftIcon: {
-                marginRight: 15,
-              },
-            })}
-          >
-            LinkedIn
-          </Button>
-        </Group>
       </SectionContainer>
     </>
   );

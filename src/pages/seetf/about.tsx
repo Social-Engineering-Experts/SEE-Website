@@ -101,7 +101,7 @@ const About: NextPageWithLayout = () => {
           </Title>
         </div>
         <Title order={2} className={classes.secondaryTitle}>
-          Birds Aren't Real.
+          Birds Aren&apos;t Real.
         </Title>
         <Text className={classes.paragraphText}>
           They are actually drones used by the government to spy on you.

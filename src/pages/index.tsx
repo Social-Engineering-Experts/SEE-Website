@@ -8,7 +8,7 @@ import {
   Text,
   Title,
 } from "@mantine/core";
-import { IconBrandLinkedin, IconBrandTwitter, IconFlag, IconFlag3 } from "@tabler/icons";
+import { IconBrandLinkedin, IconBrandTwitter, IconTrophy, IconFlag3 } from "@tabler/icons";
 import { NextSeo } from "next-seo";
 import HomeLayout from "src/components/layouts/HomeLayout";
 import SectionContainer from "src/components/SectionContainer";
@@ -86,6 +86,10 @@ const Home: NextPageWithLayout = () => {
             direction="column"
             wrap="wrap"
           >
+            <Anchor href="/seetf/about" target="_blank" className={classes.links}>
+              <IconTrophy color="white" />
+              SEETF 2023
+            </Anchor>
             <Anchor href="https://ctftime.org/team/151372" target="_blank" className={classes.links}>
               <IconFlag3 color="white" />
               CTFTime
@@ -103,12 +107,6 @@ const Home: NextPageWithLayout = () => {
               LinkedIn
             </Anchor>
           </Flex>
-          {/* 
-          <div className={classes.socialsContainer}>
-            
-          </div> */}
-
-          <Divider my="sm" variant="dashed" />
         </div>
       </Center>
     </>

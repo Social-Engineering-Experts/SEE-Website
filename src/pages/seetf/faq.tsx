@@ -79,8 +79,7 @@ const FAQ: NextPageWithLayout = () => {
         <Title className={classes.secondaryTitle}>Who are you?</Title>
         <Text className={classes.paragraphText}>
           SEETF is run by Social Engineering Experts, a CTF team based in
-          Singapore. We were ranked 2nd in Singapore on CTFtime in 2021, and are
-          on track to retain or advance our rank for 2022.
+          Singapore. We were ranked 1st in Singapore on CTFtime in 2022.
         </Text>
         <Text style={{fontSize: "1.05rem"}}>
           Our members come from various backgrounds in the technology industry,

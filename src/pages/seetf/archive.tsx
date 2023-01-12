@@ -5,7 +5,8 @@ import {
   Divider,
   Text,
   Title,
-  Image,
+  Anchor,
+  Image
 } from "@mantine/core";
 import { NextSeo } from "next-seo";
 import { ReactElement } from "react";
@@ -73,7 +74,7 @@ const useStyles = createStyles((theme) => ({
   },
 }));
 
-const Rules: NextPageWithLayout = () => {
+const Archive: NextPageWithLayout = () => {
   const { classes, cx } = useStyles();
 
   return (
@@ -82,25 +83,51 @@ const Rules: NextPageWithLayout = () => {
       <SectionContainer className={classes.sectionContainer}>
         <div className={classes.titleWrapper}>
           <Title order={1} className={classes.mainTitle}>
-            Rules
+            Archive
           </Title>
         </div>
 
+        <Title order={2} className={classes.secondaryTitle}>
+          SEETF 2022
+        </Title>
         <Text className={classes.paragraphText}>
-          Please note that this list is non-exhaustive and any activity that
-          compromises the integrity of the competition will result in disqualification.
+          Our <Anchor href="https://ctftime.org/event/1543" target="_blank" underline={false}>
+           inaugural run of SEETF
+          </Anchor> was a huge success.
+          We had 2,000+ participants from all over the world,
+          who <Anchor href="https://ctftime.org/event/1543/weight" target="_blank" underline={false}>
+            loved
+          </Anchor> our challenges!
+          This would not have been possible without the support of our sponsors and participants,
+          and we are extremely grateful for your support.
         </Text>
-
+        <div style={{ marginLeft: "auto", marginRight: "auto" }}>
+          <Image
+            radius="md"
+            src="../scoreboard_2022.jpeg"
+            alt="CTF Tactics Iceberg"
+          />
+        </div>
+        <Title order={3} className={classes.secondaryTitle}>
+          Winners
+        </Title>
+        <Text className={classes.paragraphText}>
+          After 48 hours of intense competition, <Anchor href="https://ctftime.org/team/58979/" target="_blank" underline={false}>
+            no rev/pwn no life (r3kapig)
+          </Anchor>, N00b, and <Anchor href="https://ctftime.org/team/58980/" target="_blank" underline={false}>
+            NUSHmallows
+          </Anchor> emerged victorious and took home the top three prizes.
+        </Text>
+        <Title order={3} className={classes.secondaryTitle}>
+          Mastery Awards
+        </Title>
         <div className={classes.listContainer}>
           <Text
             className={cx(classes.paragraphTextWithoutSpacing, {
               [classes.paragraphWithArrows]: 1,
             })}
           >
-            Do not attack the competition infrastructure.
-            This includes overwhelming our servers with unnecessary traffic,
-            such as through the use of fuzzers, scanners, or bruteforcing tools.
-            <Text fw={700}>Our challenges are not black box penetration tests and should not be treated as such.</Text>
+            peko hacked the interwebz and took home the Mastery Award for Web.
           </Text>
           <Divider
             variant="dashed"
@@ -113,7 +140,7 @@ const Rules: NextPageWithLayout = () => {
               [classes.paragraphWithArrows]: 1,
             })}
           >
-            Strictly no discussion of solutions or hints before the CTF is over.
+            willwam845 violated the official secrets act and took home the Mastery Award for Crypto.
           </Text>
           <Divider
             variant="dashed"
@@ -126,8 +153,7 @@ const Rules: NextPageWithLayout = () => {
               [classes.paragraphWithArrows]: 1,
             })}
           >
-            Strictly no cross-team communication or collaboration before the CTF
-            is over.
+            thehackerscrew went shell collecting at east coast park and took home the Mastery Award for Pwn.
           </Text>
           <Divider
             variant="dashed"
@@ -140,28 +166,35 @@ const Rules: NextPageWithLayout = () => {
               [classes.paragraphWithArrows]: 1,
             })}
           >
-            This is not a social engineering competition.
+            AuroraDawn passed their Introduction to Programming class and took home the Mastery Award for Reversing.
+          </Text>
+          <Divider
+            variant="dashed"
+            size="sm"
+            color="#B5E8535A"
+            className={classes.divider}
+          />
+                      <Text
+            className={cx(classes.paragraphTextWithoutSpacing, {
+              [classes.paragraphWithArrows]: 1,
+            })}
+          >
+            nthistle joined the <Anchor href="https://miscgang.xyz/" target="_blank" underline={false}>
+              Miscgang</Anchor> and took home the Mastery Award for Misc.
           </Text>
         </div>
-
+        <Title order={3} className={classes.secondaryTitle}>
+          Writeups
+        </Title>
         <Text className={classes.paragraphText}>
-          At the end of the day, it boils down to exercising common sense and
-          courtesy to your fellow competitors. Please do not engage in anything
-          below the &#34;Taboo CTF Tactics&#34; part of the iceberg.
+          Go read these <Anchor href="https://docs.google.com/spreadsheets/d/12a7onACZZQLCvL7AdhBUUDV2OOo0AEXhlsNNXVWrSJ4/edit?usp=sharing" target="_blank" underline={false}>
+            awesome writeups</Anchor> by our participants!
         </Text>
-
-        <div style={{ maxWidth: 500, marginLeft: "auto", marginRight: "auto" }}>
-          <Image
-            radius="md"
-            src="../CTFTactics.jpeg"
-            alt="CTF Tactics Iceberg"
-          />
-        </div>
       </SectionContainer>
     </>
   );
 };
 
-Rules.getLayout = (page: ReactElement) => <HomeLayout>{page}</HomeLayout>;
+Archive.getLayout = (page: ReactElement) => <HomeLayout>{page}</HomeLayout>;
 
-export default Rules;
+export default Archive;

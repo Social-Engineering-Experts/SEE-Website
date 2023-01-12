@@ -88,26 +88,42 @@ const useStyles = createStyles((theme) => ({
   },
 }));
 
-const Prizes: NextPageWithLayout = () => {
+const About: NextPageWithLayout = () => {
   const { classes } = useStyles();
 
   return (
     <>
-      <NextSeo title="Home" />
+      <NextSeo title="About" />
       <SectionContainer className={classes.sectionContainer}>
         <div className={classes.titleWrapper}>
           <Title order={1} className={classes.mainTitle}>
-            Prizes
+            SEETF 2023
           </Title>
         </div>
-
         <Title order={2} className={classes.secondaryTitle}>
-          To Be Announced.
+          Birds Aren't Real.
         </Title>
         <Text className={classes.paragraphText}>
-          Stay tuned for updates on our amazing prizes! We are currently
-          finalizing all the details and can&#39;t wait to share them with you.
-          Follow us on social media to stay in the loop and be the first to know when we announce the prizes.
+          They are actually drones used by the government to spy on you.
+          The Super Evil Elite Intelligence Agency (SEE-IA) desperately wants to keep this a secret,
+          but hacker and whistleblower rainbowpigeon is determined to expose them.
+        </Text>
+        <Text className={classes.paragraphText}>
+          Will you help rainbowpigeon expose the truth? Or will you help SEE-IA cover up their crimes?
+          The choice is yours.
+        </Text>
+        <Title order={2} className={classes.secondaryTitle}>
+          Details Coming Soon.
+        </Title>
+        <Text className={classes.paragraphText}>
+          The competition will run from Sat, 03 June 2023, 10:00 SGT — Sun, 04 June 2023, 18:00 SGT.
+          Please check back later for more details.
+        </Text>
+        <Title order={2} className={classes.secondaryTitle}>
+          Sponsorship
+        </Title>
+        <Text className={classes.paragraphText}>
+          <Text fw={700}>If you or your company is interested in sponsoring us, please contact us at sponsor [AT] seetf.sg.</Text>
         </Text>
         <Group position="center" mt="xl">
           <Button
@@ -139,7 +155,7 @@ const Prizes: NextPageWithLayout = () => {
             target="_blank"
             rel="noopener noreferrer"
             href="https://twitter.com/seetf_sg">
-              Twitter
+            Twitter
           </TwitterButton>
           <DiscordButton
             target="_blank"
@@ -179,6 +195,6 @@ const Prizes: NextPageWithLayout = () => {
   );
 };
 
-Prizes.getLayout = (page: ReactElement) => <HomeLayout>{page}</HomeLayout>;
+About.getLayout = (page: ReactElement) => <HomeLayout>{page}</HomeLayout>;
 
-export default Prizes;
+export default About;

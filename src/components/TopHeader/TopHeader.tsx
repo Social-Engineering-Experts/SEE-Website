@@ -10,10 +10,11 @@ import useStyles from "./TopHeader.styles";
 
 const links = [
   { link: "/", label: "Home" },
-  // { link: "/seetf/about", label: "About" },
+  { link: "/seetf/about", label: "About" },
   { link: "/seetf/faq", label: "FAQs" },
   { link: "/seetf/rules", label: "Rules" },
   { link: "/seetf/prizes", label: "Prizes" },
+  { link: "/seetf/archive", label: "Archive" },
 ];
 
 const TopHeader = () => {

@@ -216,7 +216,7 @@ const About: NextPageWithLayout = () => {
           Sponsored by Truth Seekers.
         </Title>
         <Grid justify="center">
-          <Grid.Col span={4}>
+          <Grid.Col md={4}>
             <Anchor className={classes.links} href="https://www.blockcyber.tech/" target="_blank">
               <Center>
                 <Image src="../sponsors/blockcyber.png"/>
@@ -225,7 +225,7 @@ const About: NextPageWithLayout = () => {
           </Grid.Col>
         </Grid>
         <Grid justify="center">
-          <Grid.Col span={4}>
+          <Grid.Col md={4}>
             <Anchor className={classes.links} href="https://cloud.google.com/" target="_blank">
               <Center>
                 <Image src="../sponsors/gcloud.png"/>

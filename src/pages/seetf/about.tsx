@@ -190,7 +190,7 @@ const About: NextPageWithLayout = () => {
           but hacker and whistleblower &quot;rainbowpigeon&quot; is determined to expose them.
         </Text>
         <Text className={classes.paragraphText}>
-          Will you help &quot;rainbowpigeon&quot; expose the truth? Or will stand idly
+          Will you help &quot;rainbowpigeon&quot; expose the truth? Or will you stand idly
           by while the SEE-IA attempts to cover up their crimes?
         </Text>
         <Text className={classes.paragraphText}>

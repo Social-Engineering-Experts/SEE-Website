@@ -202,7 +202,7 @@ const About: NextPageWithLayout = () => {
         </Title>
         <Text className={classes.paragraphText}>
           This year, SEETF will be held in a hybrid onsite + online format.
-          As always, the competition is open to all hackers around the world.
+          As always, the competition is open to everyone around the world.
         </Text>
         <Text className={classes.paragraphText}>
           If you&apos;re in Singapore, we invite you to join us on-site to compete for a larger prize pool

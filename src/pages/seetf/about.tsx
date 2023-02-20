@@ -216,22 +216,29 @@ const About: NextPageWithLayout = () => {
           Sponsored by Truth Seekers.
         </Title>
         <Grid justify="center">
-          <Grid.Col md={4}>
-            <Anchor className={classes.links} href="https://www.blockcyber.tech/" target="_blank">
-              <Center>
-                <Image src="../sponsors/blockcyber.png"/>
-              </Center>
-            </Anchor>
-          </Grid.Col>
+
+          <Center>
+            <Grid.Col md={4}>
+              <Anchor className={classes.links} href="https://www.blockcyber.tech/" target="_blank">
+                <Image src="../sponsors/blockcyber.png" />
+
+              </Anchor>
+            </Grid.Col>
+            <Grid.Col md={4}>
+              <Anchor className={classes.links} href="https://www.offensive-security.com/" target="_blank">
+                <Image src="../sponsors/offsec.png" />
+              </Anchor>
+            </Grid.Col>
+          </Center>
         </Grid>
         <Grid justify="center">
-          <Grid.Col md={4}>
-            <Anchor className={classes.links} href="https://cloud.google.com/" target="_blank">
-              <Center>
-                <Image src="../sponsors/gcloud.png"/>
-              </Center>
-            </Anchor>
-          </Grid.Col>
+          <Center>
+            <Grid.Col md={4}>
+              <Anchor className={classes.links} href="https://cloud.google.com/" target="_blank">
+                <Image src="../sponsors/gcloud.png" />
+              </Anchor>
+            </Grid.Col>
+          </Center>
         </Grid>
         <Text className={classes.paragraphText} align="center">
           Infra sponsored by <Anchor href="https://goo.gle/ctfsponsorship" target="_blank">goo.gle/ctfsponsorship</Anchor>

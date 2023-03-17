@@ -64,7 +64,6 @@ const Home: NextPageWithLayout = () => {
   return (
     <>
       <NextSeo title="Home" />
-      <CursorTrail />
       <Center style={{ width: "100vw", height: "100vh" }}>
         <div>
           <Flex

@@ -9,6 +9,7 @@ import { Inter, Poppins, Fira_Code, Montserrat } from "@next/font/google";
 
 import SEO from "../../next-seo.config";
 import GlobalStyles from "src/styles/GlobalStyles";
+import CursorTrail from "src/components/CursorTrail";
 
 export type NextPageWithLayout<P = {}, IP = P> = NextPage<P, IP> & {
   getLayout?: (page: ReactElement) => ReactNode;
@@ -60,6 +61,7 @@ const App = ({ Component, pageProps }: AppPropsWithLayout) => {
         }}
       >
         <GlobalStyles />
+        <CursorTrail />
         {getLayout(<Component {...pageProps} />)}
       </MantineProvider>
     </>

@@ -10,6 +10,7 @@ import {
 } from "@mantine/core";
 import { IconBrandLinkedin, IconBrandTwitter, IconTrophy, IconFlag3 } from "@tabler/icons";
 import { NextSeo } from "next-seo";
+import CursorTrail from "src/components/CursorTrail";
 import HomeLayout from "src/components/layouts/HomeLayout";
 import SectionContainer from "src/components/SectionContainer";
 import { NextPageWithLayout } from "./_app";
@@ -63,6 +64,7 @@ const Home: NextPageWithLayout = () => {
   return (
     <>
       <NextSeo title="Home" />
+      <CursorTrail />
       <Center style={{ width: "100vw", height: "100vh" }}>
         <div>
           <Flex

@@ -61,7 +61,7 @@ const App = ({ Component, pageProps }: AppPropsWithLayout) => {
         }}
       >
         <GlobalStyles />
-        <CursorTrail />
+        {/* <CursorTrail /> */}
         {getLayout(<Component {...pageProps} />)}
       </MantineProvider>
     </>

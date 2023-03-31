@@ -103,6 +103,7 @@ const useStyles = createStyles((theme) => ({
   gridCol: {
     display: "flex",
     alignItems: "center",
+    justifyContent: "center",
   }
 }));
 
@@ -221,19 +222,24 @@ const About: NextPageWithLayout = () => {
           Sponsored by Truth Seekers.
         </Title>
         <Grid justify="center">
-          <Grid.Col md={4} className={classes.gridCol}>
+          <Grid.Col md={4} mt="md" className={classes.gridCol}>
+            <Anchor className={classes.links} href="https://osec.io/" target="_blank">
+              <Image src="../sponsors/ottersec.png" />
+            </Anchor>
+          </Grid.Col>
+          <Grid.Col md={4} mt="md" className={classes.gridCol}>
             <Anchor className={classes.links} href="https://www.blockcyber.tech/" target="_blank">
               <Image src="../sponsors/blockcyber.png" />
             </Anchor>
           </Grid.Col>
-          <Grid.Col md={4} className={classes.gridCol}>
+          <Grid.Col md={4} mt="md" className={classes.gridCol}>
             <Anchor className={classes.links} href="https://www.offensive-security.com/" target="_blank">
               <Image src="../sponsors/offsec.png" />
             </Anchor>
           </Grid.Col>
         </Grid>
         <Grid justify="center">
-          <Grid.Col md={4} className={classes.gridCol}>
+          <Grid.Col md={4} mt="md" className={classes.gridCol}>
             <Anchor className={classes.links} href="https://cloud.google.com/" target="_blank">
               <Image src="../sponsors/gcloud.png" />
             </Anchor>

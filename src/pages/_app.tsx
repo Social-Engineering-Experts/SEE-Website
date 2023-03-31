@@ -1,4 +1,7 @@
 import type { AppProps } from "next/app";
+import { useEffect, useState } from "react";
+import ReactLoading from 'react-loading';
+import Router from "next/router";
 import Head from "next/head";
 import { MantineProvider } from "@mantine/core";
 import { ReactElement, ReactNode } from "react";
@@ -38,10 +41,16 @@ export const fira_code = Fira_Code({
   style: ["normal"],
   subsets: ["latin"],
   display: "swap",
-});
+})
 
 const App = ({ Component, pageProps }: AppPropsWithLayout) => {
   const getLayout = Component.getLayout ?? ((page) => page);
+
+  const [loading, setLoading] = useState(true);
+  // similar to componentDidMount
+  useEffect(() => {
+    setLoading(false);
+  }, []);
 
   return (
     <>
@@ -62,7 +71,16 @@ const App = ({ Component, pageProps }: AppPropsWithLayout) => {
       >
         <GlobalStyles />
         {/* <CursorTrail /> */}
-        {getLayout(<Component {...pageProps} />)}
+        {loading ? <div style={{
+          position: "fixed",
+          left: "50%",
+          top: "50%",
+          transform: "translate(-50%, -50%)",
+          width: "10%",
+          height: "10%",
+        }}>
+          <ReactLoading type="bubbles" height={'100%'} width={'100%'} />
+        </div> : getLayout(<Component {...pageProps} />)}
       </MantineProvider>
     </>
   );

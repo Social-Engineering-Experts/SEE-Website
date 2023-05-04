@@ -120,7 +120,7 @@ const About: NextPageWithLayout = () => {
           </Title>
         </div>
         <Text fz="lg" fw={700} align="center">
-          Sat, 03 June 2023, 10:00 SGT — Sun, 04 June 2023, 18:00 SGT
+          Sat, 03 June 2023, 10:00 SGT — Mon, 05 June 2023, 10:00 SGT
         </Text>
         <Group position="center" mt="xl">
           <DiscordButton
@@ -207,12 +207,12 @@ const About: NextPageWithLayout = () => {
           Join the Resistance.
         </Title>
         <Text className={classes.paragraphText}>
-          This year, SEETF will be held in a hybrid onsite + online format.
+          SEETF will be held fully online, over 48 hours.
           As always, the competition is open to everyone around the world.
         </Text>
         <Text className={classes.paragraphText}>
-          If you&apos;re in Singapore, we invite you to join us on-site to compete for a larger prize pool
-          and network with fellow hackers and our industry partners.
+          There will be two divisions. The Open division is for everyone,
+          while the Singapore Students division is for students in Singapore up to the undergraduate level.
         </Text>
         <Text className={classes.paragraphText}>
           Please check back later for more details.

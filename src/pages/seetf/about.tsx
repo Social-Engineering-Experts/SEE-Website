@@ -14,7 +14,7 @@ import {
 import { DiscordIcon, TwitterIcon } from "@mantine/ds";
 import { IconBrandTwitter } from "@tabler/icons";
 import { NextSeo } from "next-seo";
-import { ReactElement } from "react";
+import { ReactElement, useEffect, useState } from "react";
 import HomeLayout from "src/components/layouts/HomeLayout";
 import SectionContainer from "src/components/SectionContainer";
 import { NextPageWithLayout } from "../_app";
@@ -110,6 +110,25 @@ const useStyles = createStyles((theme) => ({
 const About: NextPageWithLayout = () => {
   const { classes } = useStyles();
 
+  const countDownDate = new Date("June 10, 2023 02:00:00 UTC").getTime();
+  const [countDown, setCountDown] = useState(
+    countDownDate - new Date().getTime()
+  );
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCountDown(countDownDate - new Date().getTime());
+    }, 1000);
+    return () => clearInterval(interval);
+  }, [countDownDate]);
+
+  const distance = Math.max(countDown, 0);
+  
+  const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+  const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
   return (
     <>
       <NextSeo title="About" />
@@ -119,7 +138,10 @@ const About: NextPageWithLayout = () => {
             SEETF 2023
           </Title>
         </div>
-        <Text fz="lg" fw={700} align="center">
+        <Text fz="xl" fw={700} align="center">
+          {days}d {hours}h {minutes}m {seconds}s until SEETF begins
+        </Text>
+        <Text fz="lg"å align="center">
           Sat, 10 June 2023, 02:00 UTC — Mon, 12 June 2023, 02:00 UTC
         </Text>
         <Group position="center" mt="xl">

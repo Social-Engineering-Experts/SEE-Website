@@ -120,7 +120,7 @@ const About: NextPageWithLayout = () => {
           </Title>
         </div>
         <Text fz="lg" fw={700} align="center">
-          Sat, 03 June 2023, 10:00 SGT — Mon, 05 June 2023, 10:00 SGT
+          Sat, 10 June 2023, 10:00 SGT — Mon, 12 June 2023, 10:00 SGT
         </Text>
         <Group position="center" mt="xl">
           <DiscordButton

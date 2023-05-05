@@ -141,7 +141,7 @@ const About: NextPageWithLayout = () => {
         <Text fz="xl" fw={700} align="center">
           {days}d {hours}h {minutes}m {seconds}s until SEETF begins
         </Text>
-        <Text fz="lg"å align="center">
+        <Text fz="lg" align="center">
           Sat, 10 June 2023, 02:00 UTC — Mon, 12 June 2023, 02:00 UTC
         </Text>
         <Group position="center" mt="xl">

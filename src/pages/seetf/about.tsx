@@ -104,7 +104,11 @@ const useStyles = createStyles((theme) => ({
     display: "flex",
     alignItems: "center",
     justifyContent: "center",
-  }
+  },
+
+  divider: {
+    marginBlock: "1.5rem",
+  },
 }));
 
 const About: NextPageWithLayout = () => {
@@ -123,7 +127,7 @@ const About: NextPageWithLayout = () => {
   }, [countDownDate]);
 
   const distance = Math.max(countDown, 0);
-  
+
   const days = Math.floor(distance / (1000 * 60 * 60 * 24));
   const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
   const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
@@ -144,6 +148,36 @@ const About: NextPageWithLayout = () => {
         <Text fz="lg" align="center">
           Sat, 10 June 2023, 02:00 UTC — Mon, 12 June 2023, 02:00 UTC
         </Text>
+        <Group position="center" mt="xl">
+          <Button
+            component="a"
+            target="_blank"
+            rel="noopener noreferrer"
+            href="https://play.seetf.sg/"
+            styles={(theme) => ({
+              root: {
+                fontSize: "1.5rem",
+                height: 50,
+                backgroundColor: "#097969",
+                border: 0,
+
+                "&:hover": {
+                  backgroundColor: theme.fn.darken("#097969", 0.1),
+                },
+              },
+
+              leftIcon: {
+                marginRight: 15,
+              },
+            })}
+          >REGISTER NOW</Button>
+        </Group>
+        <Divider
+            variant="dashed"
+            size="sm"
+            color="#B5E8535A"
+            className={classes.divider}
+          />
         <Group position="center" mt="xl">
           <DiscordButton
             target="_blank"

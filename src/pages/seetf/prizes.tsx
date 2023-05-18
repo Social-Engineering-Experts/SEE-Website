@@ -102,11 +102,23 @@ const Prizes: NextPageWithLayout = () => {
         </div>
 
         <Title order={2} className={classes.secondaryTitle}>
-          To Be Announced.
+          Open Division
         </Title>
         <Text className={classes.paragraphText}>
-          Please check back later for more details.
-          In the meantime, follow us on social media and join our Discord server to stay in the loop!
+          <ul>
+            <li>1st to 3rd place: 4x 1 year Burp Bounty Pro</li>
+          </ul>
+        </Text>
+        <Title order={2} className={classes.secondaryTitle}>
+          Singapore Students Division
+        </Title>
+        <Text className={classes.paragraphText}>
+          <ul>
+            <li>1st place: 1000 SGD</li>
+            <li>2nd place: 500 SGD</li>
+            <li>3rd place: 300 SGD</li>
+            <li>Raffle: 1x OffSec 90 day course and 1x OffSec Learn Fundamentals</li>
+          </ul>
         </Text>
       </SectionContainer>
     </>

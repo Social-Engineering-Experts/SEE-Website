@@ -267,12 +267,29 @@ const About: NextPageWithLayout = () => {
           As always, the competition is open to everyone around the world.
         </Text>
         <Text className={classes.paragraphText}>
-          There will be two divisions. The Open division is for everyone,
+          Prizes are split between two divisions. The Open division is for everyone,
           while the Singapore Students division is for students in Singapore up to the undergraduate level.
         </Text>
+        <Title order={2} className={classes.secondaryTitle}>
+          Hack the Planet.
+        </Title>
         <Text className={classes.paragraphText}>
-          Please check back later for more details.
-          In the meantime, follow us on social media and join our Discord server to stay in the loop!
+          If you&apos;re new to CTFs, we have plenty of beginner-friendly challenges for you to hone your skills.
+          For more experienced players, we promise high-quality challenges that will test your abilities!
+        </Text>
+        <Text className={classes.paragraphText}>
+          Look out for these special challenge tags:
+          <ul>
+            <li>🎓 (Beginner Friendly) - These are challenges that are generally more accessible to beginners.</li>
+            <li>
+              🤪 (Insanity Check) - These are challenges that may be more difficult than they initially appear.
+              They need not be the most difficult challenges in the competition, but they are definitely not easy.
+            </li>
+            <li>
+              🌎 (Real World) - These are challenges based on real-world software.
+              They may or may not require zero days.
+            </li>
+          </ul>
         </Text>
         <Title order={2} className={classes.secondaryTitle}>
           Sponsored by Truth Seekers.
@@ -293,8 +310,11 @@ const About: NextPageWithLayout = () => {
               <Image src="../sponsors/offsec.png" />
             </Anchor>
           </Grid.Col>
-        </Grid>
-        <Grid justify="center">
+          <Grid.Col md={4} mt="md" className={classes.gridCol}>
+            <Anchor className={classes.links} href="https://burpbounty.net/" target="_blank">
+              <Image src="../sponsors/burpbounty.png" />
+            </Anchor>
+          </Grid.Col>
           <Grid.Col md={4} mt="md" className={classes.gridCol}>
             <Anchor className={classes.links} href="https://cloud.google.com/" target="_blank">
               <Image src="../sponsors/gcloud.png" />
